@@ -1,0 +1,89 @@
+
+/*Estilos del cuerpo */
+body {
+    font-family: arial, sans-serif;
+    background-color: #f5f5f5;
+    background-color: rgb(0, 187, 255); 
+    
+}
+/*Estilos del encabezado*/
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #4CAF50;
+    padding: 1em;
+    position: relative;
+}
+h1 {
+    color: red;
+    margin: 0;
+    text-align: center;
+}
+/*Estilps del menu hamburguesa*/
+.menu-haburguesa {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+.barra {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px 0;
+}
+/*Estilos de navegacion*/
+nav {
+    display: none;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    background-color: #333;
+    width: 200px;
+    text-align: center;
+}
+.hamburguer {
+    font-size: 30px;
+    cursor: pointer;
+    display: none;
+}
+nav.show {
+    display: block;
+}
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+nav ul li {
+    margin: 1em 0;
+}
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 1 .2em;
+    display: block;
+    padding: 1em;
+    border-bottom: 1px solid #444;
+}
+/*Estilos de seccion*/
+section {
+    padding: 20px;
+}
+/*Estilos de pie de pagina */
+footer {
+    background-color: #4CAF50;
+    color: white;
+    text-align: center;
+    padding:  0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+/*Estilos para mostrar el menu en pantallas pequeñas */
+@media (max-width:768px) { 
+    nav {
+        right: 0;
+        width: 100%;   
+    }
+}
+        
